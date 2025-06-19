@@ -61,8 +61,8 @@ export default function About() {
               Beyond the <span className="bg-gradient-to-r from-indigo-600 to-purple-600 bg-clip-text text-transparent">Code</span>
             </h2>
             <p className="text-base lg:text-xl text-gray-600 max-w-3xl mx-auto leading-relaxed px-4">
-              I'm passionate about bridging technology and education to create meaningful learning experiences. 
-              Here's what drives me every day.
+              I&apos;m passionate about bridging technology and education to create meaningful learning experiences. 
+              Here&apos;s what drives me every day.
             </p>
           </div>
 

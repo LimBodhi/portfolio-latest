@@ -89,7 +89,7 @@ export default function Contact() {
               transition={{ duration: 0.8, delay: 0.2 }}
             >
               <h3 className="text-2xl font-semibold text-gray-900 mb-8">
-                Let's Connect
+                Let&apos;s Connect
               </h3>
               
               {/* Contact Info */}
@@ -202,7 +202,7 @@ export default function Contact() {
                     onChange={handleChange}
                     required
                     className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-primary-500 focus:border-transparent transition-colors"
-                    placeholder="What's this about?"
+                    placeholder="What&apos;s this about?"
                   />
                 </div>
                 

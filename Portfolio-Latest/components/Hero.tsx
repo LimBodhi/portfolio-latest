@@ -37,7 +37,7 @@ export default function Hero() {
             className="mb-6"
           >
             <span className="inline-block px-4 py-2 glass rounded-full text-white/90 text-sm font-medium">
-              👋 Hello, I'm
+              👋 Hello, I&apos;m
             </span>
           </motion.div>
 

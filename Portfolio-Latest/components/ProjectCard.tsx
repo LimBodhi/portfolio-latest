@@ -2,6 +2,7 @@
 import { motion, AnimatePresence } from 'framer-motion'
 import { ExternalLink, Github, Calendar, User, Star, X, ZoomIn } from 'lucide-react'
 import { useState } from 'react'
+import Image from 'next/image'
 
 interface ProjectCardProps {
   title: string
@@ -54,10 +55,11 @@ export default function ProjectCard({
         <div className="relative h-48 bg-gradient-to-br from-white/10 to-white/5 overflow-hidden">
           {image ? (
             <div className="relative w-full h-full cursor-pointer" onClick={openModal}>
-              <img
+              <Image
                 src={image}
                 alt={title}
-                className="w-full h-full object-cover transition-transform duration-300 group-hover:scale-110"
+                fill
+                className="object-cover transition-transform duration-300 group-hover:scale-110"
               />
               
               {/* Zoom overlay on hover */}
@@ -183,9 +185,11 @@ export default function ProjectCard({
 
               {/* Image */}
               <div className="relative w-full h-full glass rounded-2xl overflow-hidden">
-                <img
+                <Image
                   src={image}
                   alt={title}
+                  width={800}
+                  height={600}
                   className="w-full h-full object-contain max-h-[80vh]"
                 />
                 

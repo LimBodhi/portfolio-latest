@@ -2,6 +2,7 @@ import type { Metadata } from 'next'
 import './globals.css'
 
 export const metadata: Metadata = {
+  metadataBase: new URL('https://limbodhi.vercel.app'),
   title: 'Portofolio Lim Bodhi Wijaya',
   keywords: ['portfolio', 'teaching assistant', 'education', 'AI', 'UI', 'sistem informasi', 'GEMASTIK', 'TASLA'],
   authors: [{ name: 'Lim Bodhi Wijaya' }],
