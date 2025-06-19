@@ -50,7 +50,7 @@ export default function Contact() {
     {
       icon: Linkedin,
       label: 'LinkedIn',
-      href: 'https://linkedin.com/in/limbodhiwijaya',
+      href: 'https://www.linkedin.com/in/limbodhiwijaya/',
       color: 'hover:text-blue-600'
     },
     {
@@ -76,8 +76,8 @@ export default function Contact() {
               Get In <span className="gradient-text">Touch</span>
             </h2>
             <p className="text-lg text-gray-600 max-w-2xl mx-auto">
-              Tertarik untuk berkolaborasi atau memiliki pertanyaan? 
-              Jangan ragu untuk menghubungi saya. Saya akan dengan senang hati membalas pesan Anda.
+              Tertarik untuk berkolaborasi dalam proyek full-stack development atau AI applications? 
+              Jangan ragu untuk menghubungi saya. Saya terbuka untuk diskusi tentang teknologi dan peluang baru.
             </p>
           </div>
 

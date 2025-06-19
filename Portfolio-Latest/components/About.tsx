@@ -10,19 +10,19 @@ const achievements = [
     icon: Award,
     title: 'GEMASTIK Winner',
     subtitle: '2023 & 2024',
-    description: 'Consecutive national ICT Paper competition victories'
+    description: 'Back-to-back national ICT Paper competition victories'
   },
   {
     icon: GraduationCap,
-    title: 'TASLA Scholarship',
-    subtitle: 'Leadership Excellence',
-    description: 'Recognized for outstanding academic and leadership performance'
+    title: 'Teaching Assistant',
+    subtitle: 'Fasilkom UI',
+    description: 'Active mentor for Web Programming and Database courses'
   },
   {
     icon: Rocket,
-    title: 'Top Student',
-    subtitle: 'GPA 3.75/4.00',
-    description: 'Consistent academic excellence in Information Systems'
+    title: 'Information Systems',
+    subtitle: '6th Semester',
+    description: 'Focused on full-stack development and AI applications'
   }
 ]
 
@@ -80,19 +80,20 @@ export default function About() {
                 </h3>
                 <div className="space-y-3 lg:space-y-4 text-gray-600 leading-relaxed text-sm lg:text-lg">
                   <p>
-                    Saya percaya bahwa teknologi terbaik adalah yang dapat memberdayakan orang lain. 
-                    Sebagai mahasiswa Sistem Informasi UI dan Teaching Assistant, saya menggabungkan 
-                    passion dalam coding dengan kecintaan mengajar.
+                    Saya adalah mahasiswa Sistem Informasi semester 6 di Fasilkom UI dengan passion 
+                    yang besar dalam full-stack development, penelitian, dan membangun produk digital 
+                    yang berdampak. Saat ini saya fokus mengeksplorasi Docker, Spring Boot, dan 
+                    aplikasi AI di berbagai domain.
                   </p>
                   <p>
-                    Setiap hari, saya bekerja dengan 50+ mahasiswa, membantu mereka memahami konsep 
-                    programming dan database. Pengalaman ini mengajarkan saya bahwa cara terbaik 
-                    untuk belajar adalah dengan mengajar.
+                    Sebagai Teaching Assistant, saya aktif membantu mahasiswa memahami konsep 
+                    Web Programming dan Database Systems. Pengalaman ini mengajarkan saya cara 
+                    berkomunikasi teknis yang efektif dan pentingnya mentorship dalam pembelajaran.
                   </p>
                   <p className="hidden sm:block">
-                    Melalui penelitian AI dan education technology, saya berkomitmen untuk menciptakan 
-                    solusi yang tidak hanya inovatif, tetapi juga dapat memberikan dampak nyata 
-                    bagi dunia pendidikan di Indonesia.
+                    Saya telah memenangkan kompetisi GEMASTIK ICT Paper dua tahun berturut-turut (2023-2024) 
+                    dan aktif dalam komunitas Google Developer Student Clubs. Melalui berbagai proyek, 
+                    saya berkomitmen untuk menciptakan solusi teknologi yang inovatif dan bermanfaat.
                   </p>
                 </div>
               </div>

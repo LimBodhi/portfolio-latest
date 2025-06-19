@@ -6,57 +6,56 @@ import ProjectCard from './ProjectCard'
 
 const projects = [
   {
-    title: 'EduAI Platform',
-    description: 'Platform pembelajaran berbasis AI yang membantu personalisasi materi belajar untuk setiap siswa. Menggunakan machine learning untuk menganalisis pola belajar dan memberikan rekomendasi yang tepat.',
+    title: 'Literasea',
+    description: 'Aplikasi web bookstore yang dibangun untuk ujian tengah semester PBP. Dipilih oleh dosen sebagai salah satu proyek terbaik semester ini. Tersedia versi web dan mobile.',
     role: 'Full Stack Developer',
-    technologies: ['React', 'Node.js', 'Python', 'TensorFlow', 'MongoDB'],
+    technologies: ['Django', 'Dart', 'PostgreSQL', 'Koyeb'],
     year: '2024',
-    featured: true,
-    demoUrl: 'https://demo.eduai.com',
-    githubUrl: 'https://github.com/yourusername/eduai-platform'
+    image: '/images/projects/literasea.png',
+    demoUrl: 'https://tired-aloysia-fmoc-a95e96cf.koyeb.app/',
+    githubUrl: 'https://github.com/LimBodhi/literasea'
   },
   {
-    title: 'Smart Campus Assistant',
-    description: 'Aplikasi mobile yang membantu mahasiswa UI dalam aktivitas kampus sehari-hari. Fitur meliputi jadwal kuliah, maps kampus, dan integrasi dengan sistem akademik.',
-    role: 'Mobile Developer',
-    technologies: ['React Native', 'Firebase', 'Node.js', 'MongoDB'],
+    title: 'FMOC',
+    description: 'Proyek capstone SaaS untuk mengelola proses finansial di PT Personel Alih Daya. Sistem terintegrasi dengan fitur manajemen keuangan yang komprehensif.',
+    role: 'Full Stack Developer',
+    technologies: ['Spring Boot', 'Next.js', 'PostgreSQL', 'Docker'],
     year: '2024',
-    demoUrl: 'https://demo.smartcampus.com',
-    githubUrl: 'https://github.com/yourusername/smart-campus'
+    demoUrl: 'https://www.fmoc-synergy.com',
+    githubUrl: 'https://github.com/LimBodhi/fmoc'
   },
   {
-    title: 'Learning Analytics Dashboard',
-    description: 'Dashboard analitik untuk membantu dosen memantau progress pembelajaran mahasiswa. Visualisasi data interaktif dengan insights yang actionable.',
-    role: 'Data Analyst & Frontend Developer',
-    technologies: ['Python', 'Pandas', 'React', 'D3.js', 'PostgreSQL'],
-    year: '2023',
-    featured: true,
-    demoUrl: 'https://demo.analytics.com',
-    githubUrl: 'https://github.com/yourusername/learning-analytics'
-  },
-  {
-    title: 'Virtual Lab Simulator',
-    description: 'Simulator laboratorium virtual untuk praktikum programming. Menyediakan environment yang aman untuk belajar tanpa khawatir merusak sistem.',
+    title: 'Pacilflix',
+    description: 'Mockup layanan streaming untuk mata kuliah Database. Menggunakan SQL murni (tanpa ORM) melalui psycopg2 untuk optimasi performa database.',
     role: 'Backend Developer',
-    technologies: ['Docker', 'Node.js', 'React', 'WebSocket', 'Redis'],
-    year: '2023',
-    githubUrl: 'https://github.com/yourusername/virtual-lab'
+    technologies: ['Django', 'PostgreSQL', 'psycopg2', 'HTML/CSS'],
+    year: '2024',
+    githubUrl: 'https://github.com/LimBodhi/Pacilflix'
   },
   {
-    title: 'AI Paper Summarizer',
-    description: 'Tool AI yang membantu mahasiswa merangkum paper akademik dengan cepat. Menggunakan NLP untuk mengekstrak poin-poin penting dari paper ilmiah.',
-    role: 'AI Engineer',
-    technologies: ['Python', 'NLTK', 'Transformers', 'FastAPI', 'Vue.js'],
-    year: '2023',
-    demoUrl: 'https://demo.papersum.com'
+    title: 'Idle Car Detector',
+    description: 'Sistem berbasis computer vision untuk mendeteksi kendaraan yang parkir sembarangan menggunakan YOLOv4 dan background subtraction. Solusi untuk mengatasi kemacetan di Indonesia.',
+    role: 'Computer Vision Engineer',
+    technologies: ['Python', 'OpenCV', 'YOLOv4', 'Computer Vision'],
+    year: '2024',
+    githubUrl: 'https://github.com/LimBodhi/idle-car-detector'
   },
   {
-    title: 'Collaborative Code Review',
-    description: 'Platform untuk code review yang digunakan dalam mata kuliah programming. Memfasilitasi peer review dan feedback yang konstruktif.',
-    role: 'Full Stack Developer',
-    technologies: ['React', 'Express.js', 'Socket.io', 'PostgreSQL'],
-    year: '2022',
-    githubUrl: 'https://github.com/yourusername/code-review'
+    title: 'Tibib',
+    description: 'Simulasi platform fintech untuk trading mutual fund dengan arsitektur microservices dan sistem autentikasi yang aman.',
+    role: 'Backend Developer',
+    technologies: ['Django', 'Microservices', 'Authentication', 'PostgreSQL'],
+    year: '2023',
+    demoUrl: 'https://kelompok-13-tibib.pkpl.cs.ui.ac.id/',
+    githubUrl: 'https://github.com/LimBodhi/tibib'
+  },
+  {
+    title: 'Literasea Mobile',
+    description: 'Versi mobile dari aplikasi Literasea bookstore yang dibangun dengan Flutter untuk pengalaman mobile yang optimal.',
+    role: 'Mobile Developer',
+    technologies: ['Dart', 'Flutter', 'Django API', 'Mobile Development'],
+    year: '2024',
+    githubUrl: 'https://github.com/LimBodhi/literasea-mobile'
   }
 ]
 
@@ -65,8 +64,18 @@ export default function Projects() {
   const isInView = useInView(ref, { once: true, amount: 0.1 })
 
   return (
-    <section id="projects" className="py-20 bg-gray-50">
-      <div className="container-custom section-padding">
+    <section id="projects" className="section-gradient-3 section-spacing relative overflow-hidden">
+      {/* Background overlay */}
+      <div className="section-overlay"></div>
+      
+      {/* Subtle background elements */}
+      <div className="absolute inset-0 opacity-15">
+        <div className="absolute top-20 left-20 w-72 h-72 bg-white rounded-full mix-blend-overlay filter blur-3xl animate-pulse"></div>
+        <div className="absolute bottom-20 right-20 w-96 h-96 bg-white rounded-full mix-blend-overlay filter blur-3xl animate-pulse delay-1000"></div>
+        <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-64 h-64 bg-white rounded-full mix-blend-overlay filter blur-3xl animate-pulse delay-500"></div>
+      </div>
+
+      <div className="container-custom section-padding relative z-10">
         <motion.div
           ref={ref}
           initial={{ opacity: 0, y: 50 }}
@@ -74,18 +83,28 @@ export default function Projects() {
           transition={{ duration: 0.8 }}
         >
           {/* Section Header */}
-          <div className="text-center mb-16">
-            <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">
+          <div className="text-center content-spacing">
+            <motion.div
+              initial={{ opacity: 0, scale: 0.5 }}
+              animate={isInView ? { opacity: 1, scale: 1 } : { opacity: 0, scale: 0.5 }}
+              transition={{ duration: 0.6, delay: 0.2 }}
+              className="inline-block mb-6"
+            >
+              <span className="glass px-4 py-2 rounded-full text-white/90 text-sm font-semibold">
+                Portfolio
+              </span>
+            </motion.div>
+            <h2 className="heading-secondary">
               My <span className="gradient-text">Projects</span>
             </h2>
-            <p className="text-lg text-gray-600 max-w-2xl mx-auto">
+            <p className="text-lg lg:text-xl text-body max-w-3xl mx-auto leading-relaxed">
               Berikut adalah beberapa proyek yang telah saya kerjakan, 
-              fokus pada pengembangan solusi education technology dan AI.
+              fokus pada full-stack development, AI applications, dan fintech solutions.
             </p>
           </div>
 
           {/* Projects Grid */}
-          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6 lg:gap-8">
             {projects.map((project, index) => (
               <motion.div
                 key={project.title}
@@ -105,14 +124,11 @@ export default function Projects() {
             transition={{ duration: 0.8, delay: 0.8 }}
             className="text-center mt-12"
           >
-            <p className="text-gray-600 mb-4">
-              Tertarik melihat lebih banyak proyek saya?
-            </p>
             <a
-              href="https://github.com/yourusername"
+              href="https://github.com/LimBodhi"
               target="_blank"
               rel="noopener noreferrer"
-              className="btn-secondary"
+              className="btn-glass px-8 py-3 rounded-full font-semibold"
             >
               View All Projects on GitHub
             </a>
